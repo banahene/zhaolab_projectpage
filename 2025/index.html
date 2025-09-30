@@ -8,7 +8,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>XTempLLMs - 2025</title>
+  <title>Zhao NLP Lab - 2025</title>
 
   <!-- Bootstrap core CSS -->
   <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -36,9 +36,9 @@
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar  navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+  <!-- <nav class="navbar  navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand text-white" href="index.html">XTempLLMs 2025</a>
+      <a class="navbar-brand text-white" href="index.html">FigureSenseBench</a>
       <button class="navbar-toggler navbar-toggler-right text-white" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -49,7 +49,7 @@
 
       </div>
     </div>
-  </nav>
+  </nav> -->
 
   <!-- Page Header -->
   <header class="masthead" style="background-image: url('img/home-bg.jpg')">
@@ -58,10 +58,10 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
-            <h1>XTempLLMs 2025</h1>
-            <span class="subheading">The 1<sup>st</sup> Workshop on "Large Language Models for Cross-Temporal Research"</span>
-            <span class="subheading"><b>10<sup>th</sup> October 2025</b>, co-located at <a
-                href="https://colmweb.org" target="blank">COLM 2025</a></span>
+            <h1>FigureSenseBench</h1>
+            <span class="subheading">The 1<sup>st</sup> Multilingual Benchmark Dataset for Evaluating Scientific Figure Description Ability of MLLMs</span>
+            <!-- <span class="subheading"><b>10<sup>th</sup> October 2025</b>, co-located at <a href="https://colmweb.org"
+                target="blank">COLM 2025</a></span> -->
           </div>
         </div>
       </div>
@@ -71,32 +71,123 @@
   <!-- Main Content -->
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 col-md-10 mx-auto">    
-        <h3>Important Dates</h3>
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <!-- <h3>Important Dates</h3>
         <p>All deadlines are 11.59 pm UTC -12h (“Anywhere on Earth”).
-          <ul>
-            <li><s>June 26</s> <b>June 30, 2025:</b> Submission deadline</li>
-            <li><s>July 18</s><b> July 20, 2025:</b> Submission deadline for papers with ARR reviews</li>
-            <li><b>July 24, 2025:</b> Notification of acceptance</li>
-            <li><b>October 10, 2025:</b> Workshop day</li>
-          </ul>
-        </p>
-        <h2 class="section-heading">Overview</h2>
+        <ul>
+          <li><s>June 26</s> <b>June 30, 2025:</b> Submission deadline</li>
+          <li><s>July 18</s><b> July 20, 2025:</b> Submission deadline for papers with ARR reviews</li>
+          <li><b>July 24, 2025:</b> Notification of acceptance</li>
+          <li><b>October 10, 2025:</b> Workshop day</li>
+        </ul>
+        </p> -->
+
+        <img src="img/overview_diagram.png" alt="Description"
+          style="border: 2px solid black; max-width:100%; max-height:100%;">
+
+
+        <!-- <h2 class="section-heading">Overview</h2>
         <p>
           Large language models (LLMs) have been used for a variety of time-sensitive applications such as temporal reasoning (Fatemi et al., 2024), forecasting (Jin et al., 2023) and planning (Meng et al., 2024). In addition, there has been a growing number of interdisciplinary works that use LLMs for cross-temporal research in several domains, including social science (Zhou et al., 2024), psychology (Bodroža et al., 2023), cognitive science (Huet et al., 2025), environmental science (Tian et al., 2024) and clinical studies (He et al., 2024). However, LLMs are hindered in their understanding of time due to many different reasons, including temporal biases and knowledge conflicts in pretraining and RAG data but also a fundamental limitation in LLM tokenization that fragments a date into several meaningless subtokens. Such inadequate understanding of time would lead to inaccurate reasoning, forecasting and planning, and time-sensitive findings that are potentially misleading.  
         </p>
         <p>
           Our workshop looks for (i) <b>cross-temporal work in the NLP community </b> and (ii) <b> interdisciplinary work that relies on LLMs for cross-temporal studies</b>. See <a href="cfp.html" class="underline">call for papers</a> for more details. Reference papers are available <a href="reference.html" class="underline">here</a>.</p>
+        <br> -->
+        <h2 class="section-heading">Overview</h2>
+        <!-- <p>
+          Large language models (LLMs) have been used for a variety of time-sensitive applications such as temporal reasoning (Fatemi et al., 2024), forecasting (Jin et al., 2023) and planning (Meng et al., 2024). In addition, there has been a growing number of interdisciplinary works that use LLMs for cross-temporal research in several domains, including social science (Zhou et al., 2024), psychology (Bodroža et al., 2023), cognitive science (Huet et al., 2025), environmental science (Tian et al., 2024) and clinical studies (He et al., 2024). However, LLMs are hindered in their understanding of time due to many different reasons, including temporal biases and knowledge conflicts in pretraining and RAG data but also a fundamental limitation in LLM tokenization that fragments a date into several meaningless subtokens. Such inadequate understanding of time would lead to inaccurate reasoning, forecasting and planning, and time-sensitive findings that are potentially misleading.  
+        </p> -->
+        <p>
+          This project creates a novel multilingual benchmark dataset designed for large language models (LLMs) tasked
+          with generating descriptive annotations of scientific figures. Focusing on common figure types—line plots, bar
+          charts, and pie charts—the project provides a structured annotation environment, multilingual support
+          (English, German, Bulgarian, and Chinese), and clear annotation guidelines to ensure consistency and quality.
+          Automated methods were also developed both to generate initial figure annotations and to detect annotation
+          errors made by GPT-4o using an LLM-as-a-judge framework.
+        </p>
+        <!-- </br> -->
+        <p>
+          The dataset this project is creating — currently comprising over 1,350 human-verified annotations — is
+          evaluated for correctness, consistency, and inter-annotator agreement.
+        </p>
+        <!-- </br> -->
+        <p>
+          Early results show that state-of-the-art models (particularly GPT-4o) are already highly performant in
+          describing trends, detecting separate figure segments such as lines and bars, and capturing several key
+          elements of the line charts, bar charts, and pie charts. Inaccuracies (especially numerical) were the most
+          common error type made by GPT-4o.
+        </p>
+        Results also show that automated error detection using gold-standard reference figure descriptions remains
+        promising but requires refinement, especially in severity classification.
+        <p>
+          The project contributes not only a high-quality multilingual benchmark dataset and supporting tools but also
+          insights into automated error analysis and reproducibility, paving the way for future research in
+          figure-to-text generation, accessibility, and cross-lingual AI evaluation.
+        </p>
+
+        <!-- <p> -->
+        <!-- Our workshop looks for (i) <b>cross-temporal work in the NLP community </b> and (ii) <b> interdisciplinary work that relies on LLMs for cross-temporal studies</b>. See <a href="cfp.html" class="underline">call for papers</a> for more details. Reference papers are available <a href="reference.html" class="underline">here</a>.</p> -->
+
         <br>
+
+
+        <h2>Goals</h2>
+
+        <h5>Delivered</h5>
+        <!-- <p>All deadlines are 11.59 pm UTC -12h (“Anywhere on Earth”). -->
+        <ol>
+          <li>Provided structured guidelines for the task of high-quality scientific figure descriptions.</li>
+          <li>Provided high-quality general and figure-type-specific prompts for generating scientific figure
+            descriptions using LLMs in 4 languages.</li>
+          <li>Designed and implemented a pipeline for figure extraction and preparation for human annotation</li>
+          <li>Implemented a structured annotation environment to facilitate human annotation</li>
+          <li>Created a multilingual benchmark dataset that already has over 1350 figure annotations.</li>
+        </ol>
+        <!-- </p> -->
+
+        </br>
+        <h5>Pending</h5>
+        <ol>
+          <li>Create guidelines for annotation-quality scoring</li>
+          <li>Perform error analysis on multiple LLMs by leveraging the human-annotated dataset</li>
+          <li>Perform both automated and human evaluation of the performance of multiple models in generating figure
+            annotations by following a structured prompt.</li>
+        </ol>
+
+        </br>
+
+
+        <h2>Project Team</h2>
+        <ul style="list-style-type: none; padding: 0; margin: 0;">
+          <li>Dr Wei Zhao</li>
+          <li>Christian Greisinger</li>
+          <li>Owusu-Banahene Osei</li>
+        </ul>
+
+        </br>
+
+        <h3>Annotators</h3>
+        <ul style="list-style-type: none; padding: 0; margin: 0;">
+          <li>Jonas Gnauck</li>
+          <li>Doroteya Stoyanova</li>
+          <li>Ying Xuan Loke</li>
+          <li>Pawan Saxena</li>
+          <li>Prasanna Vishweshwar Bhat</li>
+          <li>Goutham Muralikrishnan</li>
+          <li>Ian Akotey</li>
+        </ul>
+
+        </br>
+
         <h3>Contact us</h3>
-        <p>Email: <a href="mailto:xtempllms@gmail.com">xtempllms@gmail.com</a></p>
+        <p>Email: <a href="wei.zhao@abdn.ac.uk">wei.zhao@abdn.ac.uk</a></p>
         <br>
 
         <h3>Sponsors</h3>
         <div class="row sponsor-panel text-center">
           <div class="col-lg-6 mx-auto">
-              <a href="https://aij.ijcai.org/" target="blank"><img src="img/aij_logo.jpg" class="sponsor-logo"></a>
-            </div>
+            <a href="https://aij.ijcai.org/" target="blank"><img src="img/aij_logo.jpg" class="sponsor-logo"></a>
+          </div>
         </div>
       </div>
     </div>
@@ -128,7 +219,7 @@
             </li>
           </ul>
           <p class="copyright text-muted">
-            Copyright &copy; XTempLLMs 2025<br>
+            Copyright &copy; Zhao NLP Lab 2025<br>
           </p>
         </div>
       </div>
